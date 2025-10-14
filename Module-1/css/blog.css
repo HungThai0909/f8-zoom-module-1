@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&family=Roboto+Slab:wght@100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #0E1412;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: rgb(25, 149, 206);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+ul,
+ol {
+  list-style: none;
+}
+.header .container {
+    width: 100%;
+    max-width: 1710px;
+    margin: 0 auto;
+    padding: 0 9.375vw;
+    position: relative;
+    background-color: #F8EBC9;
+    height: 127px;
+}
+
+.header .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 89px;
+    padding-top: 50px;
+}
+
+.header .header-inner .logo a {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center;  
+    fill: #0E1412;
+}
+
+.header .header-inner .logo .logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.4rem;
+}
+
+.header .header-inner .logo a:hover .logo-text span {
+    color: #0E1412;
+}
+
+.header .header-inner .logo .logo-text .main {
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+.header .header-inner .logo .logo-text .sub {
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.header .header-inner .menu { 
+    margin-right: 7.5%; 
+    margin-left: calc(7.5% * 2); 
+}
+.header .header-inner .menu ul { 
+    display: flex;
+    gap: 26px;
+} 
+.header .header-inner .menu ul li { 
+    display: flex; 
+    align-items: center; 
+    position: relative;
+   
+} 
+.header .header-inner .menu ul li a { 
+    font-size: 1.6rem; 
+    font-weight: 400; 
+    color: #0E1412; 
+    transition: color 0.3s ease;
+    padding-right: 20px; 
+} 
+.header .header-inner .menu ul li:first-child a { 
+    font-weight: 600; 
+}  
+.header .header-inner .menu ul li input[type="checkbox"] { 
+    display: none; 
+}
+
+.header .header-inner .menu ul li label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header .header-inner .menu ul li .arrow-icon { 
+    width: 6px;
+    height: 6px; 
+    border: solid #0E1412; 
+    border-width: 0 0 2px 2px; 
+    rotate: -45deg; 
+    transition: all 0.3s ease;  
+    pointer-events: none; 
+    margin-left: 5px; 
+}
+.header .header-inner .menu ul li:hover a, .header .header-inner .menu ul li:hover .arrow-icon { 
+    color: #FD6038;
+     border-color: #FD6038; 
+}  
+.header .header-inner .menu ul li input[type="checkbox"]:checked + label .arrow-icon { 
+    rotate: 135deg; 
+    margin-top: 6px; 
+    border-color: #FD6038; 
+}
+
+.header .header-inner .menu ul li input[type="checkbox"]:checked ~ a {
+    color: #FD6038;
+}
+
+.header .header-inner .menu ul li input[type="checkbox"]:checked ~ a,
+.header .header-inner .menu ul li input[type="checkbox"]:checked + label .arrow-icon {
+    color: #FD6038;
+    border-color: #FD6038;
+}
+
+.header .header-inner .menu ul li input[type="checkbox"]:checked + label .arrow-icon {
+    rotate: 135deg;
+    margin-top: 6px;
+}
+
+.header .header-inner .contact {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+.header .header-inner .contact .label {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+.header .header-inner .contact .number {
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+}
+
+.blog-section {
+    width: 100%;
+    max-width: 1710px;
+    margin: 0 auto;
+    padding: 0 9.375vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.blog-content {
+    margin-block: 70px;
+    width: 100%;
+}
+
+.blog-title {
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 7rem;
+    margin-bottom: 20px;
+}
+
+.blog-text {
+    width: 470px;
+    color: #586863;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+
+.blog-list {
+    width: 100%;
+    max-width: 1710px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: flex-start;
+}
+
+.blog-item {
+    width: calc((100% - 96px) / 4);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    border-radius: 10px;
+    justify-content: flex-start; 
+    position: relative; 
+}
+
+.blog-item img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.blog-item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-item-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin-bottom: 13px;
+}
+
+.blog-date {
+    color: #586863;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    margin-bottom: 55px;
+}
+
+
+.load-more-btn {
+    background: #FD6038;
+    color: white;
+    padding: 15px 35px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    transition: background 0.3s ease;
+    margin-bottom: 150px;
+}
+
+.load-more-btn:hover {
+    background: #FF4500;
+    cursor: pointer;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1710px;
+    margin: 0 auto;
+    padding: 0 9.375vw;
+    background-color: #0E1412;
+}
+
+.footer-list {
+    display: flex;
+    padding-top: 100px;
+    gap: 70px;
+    width: 100%;
+    max-width: 1710px;
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.footer-item:last-child {
+    flex: 0 0 470px; 
+}
+
+.footer-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 24px;
+    color: white;
+}
+
+
+.footer-item ul li {
+    margin-bottom: 16px;
+}
+
+.footer-item ul li a {
+    color: #BECCC7;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    transition: color 0.3s;
+}
+
+.footer-item ul li a:hover {
+    color: #FF4500;
+}
+
+.footer-item p {
+    color: #b0b0b0;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+.footer-map {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.footer-map img {
+    width: 470px;
+    height: 268px;
+    object-fit: cover;
+    margin-bottom: 55px;
+    flex-shrink: 0;
+}
+
+.footer-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    padding: 8px 24px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(14, 20, 18, 0.10);
+    font-weight: 600;
+    line-height: 2.8rem;
+}
+
+.footer-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.footer-divider {
+    height: 1px;
+    background-color: #313D39;
+    margin-bottom: 26px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    align-self: flex-start;
+}
+
+.footer-logo a {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: flex-start;  
+}
+
+.footer-logo img {
+    filter: brightness(0) invert(1);
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.4rem;
+    color: white;
+}
+
+.footer-text .main {
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+.footer-text .sub {
+    font-family: "Roboto Slab";
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.footer-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 28px;
+}
+
+.copyright {
+    color: #BECCC7;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem; 
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.footer-social a {
+    width: 35px;
+    height: 35px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.footer-social a:hover {
+    background-color: #FF4500;
+}
