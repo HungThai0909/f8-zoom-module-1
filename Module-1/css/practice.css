@@ -596,6 +596,7 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .footer-logo img {
@@ -613,6 +614,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 1.4rem;
 }
 
 .footer-meta {

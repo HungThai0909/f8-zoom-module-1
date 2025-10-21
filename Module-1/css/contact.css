@@ -562,6 +562,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 1.4rem;
 }
 
 .footer-meta {
