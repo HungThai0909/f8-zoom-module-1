@@ -14,7 +14,12 @@
   <body>
     <header class="header">
       <div class="container">
+        <input type="checkbox" name="menu-toggle" id="menu-toggle">
+        <label for="menu-toggle" class="menu-overlay"></label>   
         <div class="header-inner">
+          <label for="menu-toggle" class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </label>
           <div class="logo">
             <a href="./index.html">
               <img src="./images/gavel_icon.png" alt="Gavel" />
@@ -25,126 +30,108 @@
             </a>
           </div>
           <!--End .logo-->
-          <nav class="menu">
-            <ul>
-              <li>
-                <input type="checkbox" id="home-toggle" />
-                <label for="home-toggle"
-                  ><span class="arrow-icon"></span
-                ></label>
-                <a href="./index.html">Home</a>
-              </li>
-              <li>
-                <input type="checkbox" id="about-toggle" />
-                <label for="about-toggle">
-                  <span class="arrow-icon"></span
-                ></label>
-                <a href="./about.html">About</a>
-              </li>
-              <li>
-                <input type="checkbox" id="practice-toggle" />
-                <label for="practice-toggle">
-                  <span class="arrow-icon"></span
-                ></label>
-                <a href="./practice.html">Practice Areas</a>
-                <div class="submenu">
-                  <ul>
-                    <li>
-                      <input
-                        type="checkbox"
-                        id="submenu-item-1"
-                        class="submenu-checkbox"
-                      />
-                      <label for="submenu-item-1"></label>
-                      <a href="#">Divorce</a>
-                    </li>
-                    <li>
-                      <input
-                        type="checkbox"
-                        id="submenu-item-2"
-                        class="submenu-checkbox"
-                      />
-                      <label for="submenu-item-2"></label>
-                      <a href="#">
-                        Personal Injury
-                        <span class="submenu-arrow"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <input
-                        type="checkbox"
-                        id="submenu-item-3"
-                        class="submenu-checkbox"
-                      />
-                      <label for="submenu-item-3"></label>
-                      <a href="#">
-                        Employment
-                        <span class="submenu-arrow"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <input
-                        type="checkbox"
-                        id="submenu-item-4"
-                        class="submenu-checkbox"
-                      />
-                      <label for="submenu-item-4"></label>
-                      <a href="#">
-                        Immigration
-                        <span class="submenu-arrow"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <input
-                        type="checkbox"
-                        id="submenu-item-5"
-                        class="submenu-checkbox"
-                      />
-                      <label for="submenu-item-5"></label>
-                      <a href="#">
-                        Family
-                        <span class="submenu-arrow"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <input
-                        type="checkbox"
-                        id="submenu-item-6"
-                        class="submenu-checkbox"
-                      />
-                      <label for="submenu-item-6"></label>
-                      <a href="#">
-                        Property
-                        <span class="submenu-arrow"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <!--End .submenu-->
-              </li>
-              <li>
-                <a href="./blog.html">Attorneys</a>
-              </li>
-              <li>
-                <input type="checkbox" id="page-toggle" />
-                <label for="page-toggle">
-                  <span class="arrow-icon"></span
-                ></label>
-                <a href="./contact.html">Page</a>
-              </li>
-            </ul>
-          </nav>
+         <nav class="menu">
+              <label for="menu-toggle" class="close-menu-btn">
+                  <i class="fa-solid fa-times"></i>
+              </label>
+              <ul>
+                <li>
+                  <input type="checkbox" name="menu-toggle" id="home-toggle" />
+                  <label for="home-toggle">
+                    <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                  </label>
+                  <a rel="prefetch" href="./index.html">Home</a>                
+                  <div class="submenu">
+                    <ul>
+                      <li>
+                        <a href="./index.html">Home 1</a>
+                      </li>
+                      <li>
+                        <a href="./index.html">Home 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <input type="checkbox" name="menu-toggle" id="about-toggle" />
+                  <label for="about-toggle">
+                    <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                  </label>
+                  <a rel="prefetch" href="./about.html">About</a>                
+                  <div class="submenu">
+                    <ul>
+                      <li>
+                        <a href="./about.html">About 1</a>
+                      </li>
+                      <li>
+                        <a href="./about.html">About 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <input type="checkbox" name="menu-toggle" id="practice-toggle" />
+                  <label for="practice-toggle">
+                    <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                  </label>
+                  <a rel="prefetch" href="./practice.html">Practice Areas</a>                
+                  <div class="submenu">
+                    <ul>
+                      <li>
+                        <a href="./practice.html">Divorce</a>
+                      </li>
+                      <li>
+                        <a href="./practice.html">Personal Injury</a>
+                      </li>
+                      <li>
+                        <a href="./practice.html">Employment</a>
+                      </li>
+                      <li>
+                        <a href="./practice.html">Immigration</a>
+                      </li>
+                      <li>
+                        <a href="./practice.html">Family</a>
+                      </li>
+                      <li>
+                        <a href="./practice.html">Property</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Attorneys</a>
+                </li>
+                <li>
+                  <input type="checkbox" name="menu-toggle" id="page-toggle" />
+                  <label for="page-toggle">
+                  <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                  </label>
+                  <a rel="prefetch" href="">Page</a>              
+                  <div class="submenu">
+                    <ul>
+                      <li>
+                        <a href="./blog.html">Blog</a>
+                      </li>
+                      <li>
+                        <a href="./contact.html">Contact</a>
+                      </li>
+                    </ul>
+                  </div>         
+                </li>
+              </ul>
+        </nav>
           <!--End .menu-->
           <div class="contact">
             <span class="label">Call:</span>
-            <span class="number">(000) 123 456 789</span>
+            <a href="tel:(000)123456789" class="number">(000) 123 456 789</a>
           </div>
           <!--End .contact-->
         </div>
         <!--End .header-inner-->
         <div class="hero">
+          <div class="hero-label">#Practice Areas</div>
           <h1 class="hero-title">Our Practice Areas to Serve You</h1>
-          <div class="hero-label">
+          <div class="hero-text">
             Where every injury is personal. We are a different kind of law firm.
             Let our small, passionate group of trial lawyers fight for your
             rights!
@@ -167,40 +154,31 @@
         </div>
         <!--End .service-content-->
         <div class="service-list">
-          <div class="service-item">
-            <img src="./images/Personal-Injury-Law.png" alt="Personal Injury Law" />
-             <input type="checkbox" id="btn1" class="service-btn-checkbox" />
-            <label for="btn1" class="service-btn">Personal Injury Law</;>
-          </div>
-          <div class="service-item">
-            <img src="./images/Employment-Law.png" alt="Employment Law" />
-             <input type="checkbox" id="btn2" class="service-btn-checkbox" />
-            <label for="btn2" class="service-btn">Employment Law</label>
-          </div>
-          <div class="service-item">
-            <img src="./images/Immigration-Law.png" alt="Immigration Law" />
-             <input type="checkbox" id="btn3" class="service-btn-checkbox" />
-            <label for="btn3" class="service-btn">Immigration Law</label>
-          </div>
-          <div class="service-item">
-            <img src="./images/Family-Law.png" alt="Family Law" />
-             <input type="checkbox" id="btn4" class="service-btn-checkbox" />
-            <label for="btn4" class="service-btn">Family Law</label>
-          </div>
-          <div class="service-item">
-            <img
-              src="./images/Divorce-Law.png"
-              alt="Divorce Law"
-            />
-             <input type="checkbox" id="btn5" class="service-btn-checkbox" />
-            <label for="btn5" class="service-btn">Divorce Law</label>
-          </div>
-          <div class="service-item">
-            <img src="./images/Property-Law.png" alt="Property Law" />
-             <input type="checkbox" id="btn6" class="service-btn-checkbox" />
-            <label for="btn6" class="service-btn">Property Law</label>
-          </div>
-        </div>
+  <div class="service-item">
+    <img src="./images/Personal-Injury-Law.png" alt="Personal Injury Law" />
+    <a href="#" class="service-btn">Personal Injury Law</a>
+  </div>
+  <div class="service-item">
+    <img src="./images/Employment-Law.png" alt="Employment Law" />
+    <a href="#" class="service-btn">Employment Law</a>
+  </div>
+  <div class="service-item">
+    <img src="./images/Immigration-Law.png" alt="Immigration Law" />
+    <a href="#" class="service-btn">Immigration Law</a>
+  </div>
+  <div class="service-item">
+    <img src="./images/Family-Law.png" alt="Family Law" />
+    <a href="#" class="service-btn">Family Law</a>
+  </div>
+  <div class="service-item">
+    <img src="./images/Divorce-Law.png" alt="Divorce Law" />
+    <a href="#" class="service-btn">Divorce Law</a>
+  </div>
+  <div class="service-item">
+    <img src="./images/Property-Law.png" alt="Property Law" />
+    <a href="#" class="service-btn">Property Law</a>
+  </div>
+</div>
          <!--End .service-list-->
       </section>
        <!--End .service-section-->
@@ -219,68 +197,93 @@
     </main>
     <!--End .main-->
      <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-list">
-                <div class="footer-item">
-                    <span class="footer-title">Justice</span>
-                     <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Cookie Preferences</a></li>
-                    </ul>
-                </div>
-                <div class="footer-item">
-                    <span class="footer-title">Pages</span>
-                     <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./practice.html">Practice Areas</a></li>
-                        <li><a href="./blog.html">Attorneys</a></li>
-                    </ul>
-                </div>
-                <div class="footer-item">
-                    <span class="footer-title">Justice</span>
-                    <p>50 Harrison Street, PH Suite 445</p>
-                    <p>Hoboken, NJ 07030</p>
-                    <p>(000) 123-4567</p>
-                    <p>yourlawfirm22@gmail.com</p>
-                </div>
-                <div class="footer-item">
-                    <div class="footer-map">
-                        <img src="./images/Map.png" alt="Map">
-                        <button class="footer-btn">View Large Map</button>
-                    </div>
-                </div>
+      <div class="footer-container">
+        <div class="footer-list">
+          <div class="footer-item">
+            <span class="footer-title">Justice</span>
+            <ul>
+              <li><a href="https://termly.io/products/privacy-policy-generator" target="_blank">Privacy Policy</a></li>
+              <li><a href="https://termly.io/products/terms-and-conditions-generator" target="_blank">Terms & Conditions</a></li>
+              <li><a href="https://termly.io/legal-dictionary/cookie-preferences" target="_blank">Cookie Preferences</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <span class="footer-title">Pages</span>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./practice.html">Practice Areas</a></li>
+              <li><a href="" >Attorneys</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <span class="footer-title">Justice</span>
+            <ul>
+            <li><a href="https://www.google.com/maps?q=50+Harrison+Street,+PH+Suite+445,+Hoboken,+NJ+07030" target="_blank"">             
+            <span>50 Harrison Street, PH Suite 445</span>
+            <span>Hoboken, NJ 07030</span></a></li>
+            <li><a href="tel:(000)1234567">(000) 123-4567</a></li>
+            <li><a href="mailto:yourlawfirm22@gmail.com">yourlawfirm22@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <div class="footer-map">
+              <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8639078439857!2d105.84117831533325!3d21.028511885995044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDAxJzQyLjYiTiAxMDXCsDUwJzM0LjIiRQ!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+              width="100%" 
+              height="268" 
+              style="border:0; border-radius: 10px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              <button class="footer-btn">View Large Map</button>
             </div>
-            <!--End .footer-list-->
-            <div class="footer-divider"></div>
-            <div class="footer-bottom">
-                <div class="footer-logo">
-                    <a href="./index.html">
-                        <img src="./images/gavel_icon.png" alt="Gavel" />
-                        <div class="footer-info">
-                            <div class="footer-text">
-                                <span class="main">Justice</span>
-                                <span class="sub">Law Firm</span>
-                            </div>
-                        </div>
-                    </a>
+          </div>
+        </div>
+        <!--End .footer-list-->
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <a href="./index.html">
+              <img src="./images/gavel_icon.png" alt="Gavel" />
+              <div class="footer-info">
+                <div class="footer-text">
+                  <span class="main">Justice</span>
+                  <span class="sub">Law Firm</span>
                 </div>
-                 <!--End .footer-logo-->
-                <div class="footer-meta">
-                    <p class="copyright">Copyright © 2022 UI HUT All Rights Reserved</p>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://publish.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-                 <!--End .footer-meta-->
+              </div>
+            </a>
+          </div>
+          <!--End .footer-logo-->
+          <div class="footer-meta">
+            <p class="copyright">Copyright © 2022 UI HUT All Rights Reserved</p>
+            <div class="footer-social">
+              <ul>
+                 <li>
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+              <li>
+                <a href="https://publish.twitter.com/" target="_blank"><i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i>
+            </a>
+            </li>
+              <li> 
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>
+            </a>
+            </li>
+              </ul>
             </div>
-                 <!--End .footer-bottom-->
+          </div>
+          <!--End .footer-meta-->
+        </div>
+        <!--End .footer-bottom-->
       </div>
     </footer>
-     <!--End .footer-->
+    <!--End .footer-->
   </body>
 </html>

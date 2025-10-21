@@ -14,10 +14,12 @@
   <body>
     <header class="header">
       <div class="container">
+        <input type="checkbox" name="menu-toggle" id="menu-toggle">
+        <label for="menu-toggle" class="menu-overlay"></label>   
         <div class="header-inner">
-          <div class="menu-toggle">
+          <label for="menu-toggle" class="menu-toggle">
             <i class="fa-solid fa-bars"></i>
-          </div>
+          </label>
           <div class="logo">
             <a href="./index.html">
               <img src="./images/gavel_icon.png" alt="Gavel" />
@@ -28,45 +30,100 @@
             </a>
           </div>
           <!--End .logo-->
-          <nav class="menu">
-            <ul>
-              <li>
-                <input type="checkbox" id="home-toggle" />
-                <label for="home-toggle"
-                  ><span class="arrow-icon"></span
-                ></label>
-                <a href="./index.html">Home</a>
-              </li>
-              <li>
-                <input type="checkbox" id="about-toggle" />
-                <label for="about-toggle">
-                  <span class="arrow-icon"></span
-                ></label>
-                <a href="./about.html">About</a>
-              </li>
-              <li>
-                <input type="checkbox" id="practice-toggle" />
-                <label for="practice-toggle">
-                  <span class="arrow-icon"></span
-                ></label>
-                <a href="./practice.html">Practice Areas</a>
-              </li>
-              <li>
-                <a href="./blog.html">Attorneys</a>
-              </li>
-              <li>
-                <input type="checkbox" id="page-toggle" />
-                <label for="page-toggle">
-                  <span class="arrow-icon"></span
-                ></label>
-                <a href="./contact.html">Page</a>
-              </li>
-            </ul>
-          </nav>
+         <nav class="menu">
+              <label for="menu-toggle" class="close-menu-btn">
+                  <i class="fa-solid fa-times"></i>
+              </label>
+              <ul>
+                <li>
+                  <input type="checkbox" name="menu-toggle" id="home-toggle" />
+                  <label for="home-toggle">
+                    <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                  </label>
+                  <a rel="prefetch" href="./index.html">Home</a>                
+                  <div class="submenu">
+                    <ul>
+                      <li>
+                        <a href="./index.html">Home 1</a>
+                      </li>
+                      <li>
+                        <a href="./index.html">Home 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <input type="checkbox" name="menu-toggle" id="about-toggle" />
+                  <label for="about-toggle">
+                    <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                  </label>
+                  <a rel="prefetch" href="./about.html">About</a>                
+                  <div class="submenu">
+                    <ul>
+                      <li>
+                        <a href="./about.html">About 1</a>
+                      </li>
+                      <li>
+                        <a href="./about.html">About 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <input type="checkbox" name="menu-toggle" id="practice-toggle" />
+                  <label for="practice-toggle">
+                    <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                  </label>
+                  <a rel="prefetch" href="./practice.html">Practice Areas</a>                
+                  <div class="submenu">
+                    <ul>
+                      <li>
+                        <a href="./practice.html">Divorce</a>
+                      </li>
+                      <li>
+                        <a href="./practice.html">Personal Injury</a>
+                      </li>
+                      <li>
+                        <a href="./practice.html">Employment</a>
+                      </li>
+                      <li>
+                        <a href="./practice.html">Immigration</a>
+                      </li>
+                      <li>
+                        <a href="./practice.html">Family</a>
+                      </li>
+                      <li>
+                        <a href="./practice.html">Property</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Attorneys</a>
+                </li>
+                <li>
+                  <input type="checkbox" name="menu-toggle" id="page-toggle" />
+                  <label for="page-toggle">
+                  <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                  </label>
+                  <a rel="prefetch" href="">Page</a>              
+                  <div class="submenu">
+                    <ul>
+                      <li>
+                        <a href="./blog.html">Blog</a>
+                      </li>
+                      <li>
+                        <a href="./contact.html">Contact</a>
+                      </li>
+                    </ul>
+                  </div>         
+                </li>
+              </ul>
+        </nav>
           <!--End .menu-->
           <div class="contact">
             <span class="label">Call:</span>
-            <span class="number">(000) 123 456 789</span>
+            <a href="tel:(000)123456789" class="number">(000) 123 456 789</a>
           </div>
           <!--End .contact-->
         </div>
@@ -79,9 +136,9 @@
               dream architectural developments has made them eam trust within
               and beyond borders.
             </p>
-            <button class="hero-btn">
+            <a href="#property-section" class="hero-btn">
               FIND PROPERTY <i class="fa-solid fa-arrow-right"></i>
-            </button>
+            </a>
           </div>
           <div class="box">
             <div class="box-img">
@@ -91,42 +148,61 @@
           </div>
         </div>
         <div class="search-container">
-          <div class="search-field">
-            <i class="fa-solid fa-location-dot"></i>
-            <div class="field-content">
-              <h4 class="field-label">Location</h4>
-              <div class="field-value">
-                Select Location
-                <i class="fa-solid fa-chevron-down"></i>
-              </div>
-            </div>
-          </div>
-          <div class="search-field">
-            <i class="fa-solid fa-house"></i>
-            <div class="field-content">
-              <h4 class="field-label">Property Type</h4>
-              <div class="field-value">
-                Choose Property Type
-                <i class="fa-solid fa-chevron-down"></i>
-              </div>
-            </div>
-          </div>
-          <div class="search-field">
-            <i class="fa-solid fa-wallet"></i>
-            <div class="field-content">
-              <h4 class="field-label">Price Range</h4>
-              <div class="field-value">
-                Choose Price
-                <i class="fa-solid fa-chevron-down"></i>
-              </div>
-            </div>
-          </div>
-          <!--End .search-field-->
-          <button class="search-btn">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <!--End .search-btn-->
-        </div>
+  <div class="search-field">
+    <i class="fa-solid fa-location-dot"></i>
+    <div class="field-content">
+      <h4 class="field-label">Location</h4>
+      <input type="checkbox" id="location-toggle" class="submenu-toggle">
+      <label for="location-toggle" class="field-value">
+        Select Location
+        <i class="fa-solid fa-chevron-down"></i>
+      </label>
+      <div class="submenu">
+        <div class="submenu-item">New York</div>
+  <div class="submenu-item">Los Angeles</div>
+  <div class="submenu-item">Chicago</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-field">
+    <i class="fa-solid fa-house"></i>
+    <div class="field-content">
+      <h4 class="field-label">Property Type</h4>
+      <input type="checkbox" id="property-toggle" class="submenu-toggle">
+      <label for="property-toggle" class="field-value">
+        Choose Property Type
+        <i class="fa-solid fa-chevron-down"></i>
+      </label>
+      <div class="submenu">
+        <div class="submenu-item">Apartment</div>
+      <div class="submenu-item">House</div>
+      <div class="submenu-item">Villa</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-field">
+    <i class="fa-solid fa-wallet"></i>
+    <div class="field-content">
+      <h4 class="field-label">Price Range</h4>
+      <input type="checkbox" id="price-toggle" class="submenu-toggle">
+      <label for="price-toggle" class="field-value">
+        Choose Price
+        <i class="fa-solid fa-chevron-down"></i>
+      </label>
+      <div class="submenu">
+        <div class="submenu-item">$0 - $100,000</div>
+      <div class="submenu-item">$100,000 - $300,000</div>
+      <div class="submenu-item">$300,000 - $500,000</div>
+      </div>
+    </div>
+  </div>
+
+  <button class="search-btn">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+</div>
         <!--End .search-container-->
       </div>
     </header>
@@ -309,7 +385,7 @@
             </div>
 
             <div class="service-sub-heading">
-              <h5>Luxury Apartment</h5>
+              <h5>Architecture Design</h5>
               <p class="service-text">
                 Marty has done a lot of work for me and helped my friends and
                 myself work through some sticky issues. His staff is
@@ -349,7 +425,7 @@
             </div>
 
             <div class="service-sub-heading">
-              <h5>Luxury Apartment</h5>
+              <h5>Extra Security</h5>
               <p class="service-text">
                 Very professional, quick responses to calls, humble and
                 understanding. Marty has done a lot of work for me and helped my
@@ -385,7 +461,7 @@
             </div>
 
             <div class="service-sub-heading">
-              <h5>Luxury Apartment</h5>
+              <h5>Home Remodeling</h5>
               <p class="service-text">
                 Very professional, quick responses to calls, humble and
                 understanding. Marty has done a lot of work for me and helped my
@@ -421,7 +497,7 @@
             </div>
 
             <div class="service-sub-heading">
-              <h5>Luxury Apartment</h5>
+              <h5>Office Renovation</h5>
               <p class="service-text">
                 Marty has done a lot of work for me and helped my friends and
                 myself work through some sticky issues. His staff is
@@ -459,7 +535,7 @@
               </svg>
             </div>
             <div class="service-sub-heading">
-              <h5>Luxury Apartment</h5>
+              <h5>Extra Security</h5>
               <p class="service-text">
                 Very professional, quick responses to calls, humble and
                 understanding. Marty has done a lot of work for me and helped my
@@ -471,8 +547,8 @@
         <!--End .service-list-->
       </section>
       <!--End .service-section-->
-      <section class="property-section">
-        <div class="property-content">
+      <section class="property-section" id="property-section">
+        <div class="property-content" >
           <div class="property-label">Properties</div>
           <h2 class="property-title">
             <span>Explore featured</span>
@@ -482,10 +558,11 @@
         <!--End .property-content-->
         <div class="property-list">
           <div class="property-item">
-            <img src="./images/modern-glass-building.png" alt="Modern Glass" />
+            <a href="https://lkldproperties.com/property/luxury-villa-in-rego-apartment/" target="_blank"> <img src="./images/modern-glass-building.png" alt="Modern Glass" />
+            </a>
             <div class="property-info"></div>
             <div class="property-info-price">$450,00</div>
-            <h5 class="property-info-title">Luxury villa in rego apartment</h5>
+            <a href="https://lkldproperties.com/property/luxury-villa-in-rego-apartment/" target="_blank"><h5 class="property-info-title">Luxury villa in rego apartment</h5></a>
             <div class="property-features">
               <div class="feature-item">
                 <img src="./icons/bed.png" alt="Bed" />
@@ -502,13 +579,17 @@
             </div>
           </div>
           <div class="property-item">
-            <img
+            <a href="https://lkldproperties.com/property/luxury-villa-in-rego-apartment/" target="_blank">
+              <img
               src="./images/contemporary-apartment-building.png"
               alt="Contemporary Apartment"
             />
+          </a>
             <div class="property-info"></div>
             <div class="property-info-price">$450,00</div>
-            <h5 class="property-info-title">Luxury villa in rego apartment</h5>
+            <a href="https://lkldproperties.com/property/luxury-villa-in-rego-apartment/" target="_blank">
+              <h5 class="property-info-title">Luxury villa in rego apartment</h5>
+            </a>
             <div class="property-features">
               <div class="feature-item">
                 <img src="./icons/bed.png" alt="Bed" />
@@ -525,13 +606,17 @@
             </div>
           </div>
           <div class="property-item">
+            <a href="https://lkldproperties.com/property/luxury-villa-in-rego-apartment/" target="_blank">
             <img
               src="./images/yellow-balcony-architecture.png"
               alt="Yellow Balcony"
             />
+            </a>
             <div class="property-info"></div>
             <div class="property-info-price">$450,00</div>
-            <h5 class="property-info-title">Luxury villa in rego apartment</h5>
+            <a href="https://lkldproperties.com/property/luxury-villa-in-rego-apartment/" target="_blank">
+                <h5 class="property-info-title">Luxury villa in rego apartment</h5>
+            </a>
             <div class="property-features">
               <div class="feature-item">
                 <img src="./icons/bed.png" alt="Bed" />
@@ -550,19 +635,19 @@
         </div>
         <!--End .property-list-->
         <div class="pagination">
-          <input type="checkbox" id="dot1" class="pagination-input" />
+          <input type="radio" id="dot1" name="pagination" class="pagination-input" checked/>
           <label for="dot1" class="pagination-dot"></label>
 
-          <input type="checkbox" id="dot2" class="pagination-input" />
+          <input type="radio" id="dot2" name="pagination" class="pagination-input" />
           <label for="dot2" class="pagination-dot"></label>
 
-          <input type="checkbox" id="dot3" class="pagination-input" />
+          <input type="radio" id="dot3" name="pagination" class="pagination-input" />
           <label for="dot3" class="pagination-dot"></label>
 
-          <input type="checkbox" id="dot4" class="pagination-input" />
+          <input type="radio" id="dot4" name="pagination" class="pagination-input" />
           <label for="dot4" class="pagination-dot"></label>
 
-          <input type="checkbox" id="dot5" class="pagination-input" />
+          <input type="radio" id="dot5" name="pagination" class="pagination-input" />
           <label for="dot5" class="pagination-dot"></label>
         </div>
         <!--End .pagination-->
@@ -781,7 +866,18 @@
             <img src="./logos/slack.png" alt="Slack" />
           </div>
           <div class="partner-item">
-            <img src="./logos/Amazon.png" alt="Amazon" />
+           <svg xmlns="http://www.w3.org/2000/svg" width="204" height="91" viewBox="0 0 204 91" fill="none">
+<g transform="translate(102, 45.5) translate(-172, -80)">
+<path d="M191.625 68.1031V70.8699C191.633 71.0554 191.713 71.2306 191.848 71.3578C191.983 71.485 192.163 71.554 192.349 71.5501H198.775L191.371 82.146C190.903 82.8272 190.903 83.5928 190.903 84.0183V86.8266C190.903 87.2522 191.37 87.6776 191.796 87.4649C195.966 85.2095 201.03 85.4222 204.817 87.4223C205.285 87.6774 205.711 87.2096 205.711 86.784V83.8478C205.668 83.4649 205.541 83.0393 205.073 82.784C202.945 81.5928 200.434 81.2524 198.051 81.295L204.434 72.1884C205.03 71.337 205.37 70.8266 205.37 70.4436V68.1031C205.363 67.9175 205.283 67.7422 205.148 67.6148C205.012 67.4875 204.833 67.4183 204.647 67.4222H192.306C192.215 67.4174 192.125 67.4317 192.04 67.4642C191.955 67.4967 191.878 67.5467 191.814 67.6109C191.75 67.6752 191.7 67.7522 191.667 67.837C191.635 67.9218 191.62 68.0125 191.625 68.1031Z" fill="#C4C4C4"/>
+<path d="M142.901 88.0184H146.646C146.83 88.0249 147.009 87.9635 147.151 87.8458C147.292 87.728 147.385 87.5622 147.412 87.3802V77.1672C147.412 77.1005 147.412 77.0331 147.411 76.9651C147.409 74.7332 147.406 71.8479 150.007 71.8479C152.383 71.8479 152.344 74.4351 152.312 76.5037C152.309 76.7326 152.305 76.9552 152.305 77.1672V87.3802C152.305 87.7208 152.603 88.0185 152.986 88.0611H156.731C156.917 88.065 157.097 87.9959 157.232 87.8685C157.367 87.7412 157.447 87.5659 157.454 87.3802V77.1672C157.454 77.0697 157.454 76.9682 157.454 76.8636C157.45 75.7808 157.445 74.3574 157.795 73.465C157.976 73.0112 158.286 72.6204 158.687 72.3406C159.088 72.0609 159.562 71.9044 160.05 71.8905C161.157 71.8905 161.965 72.2735 162.263 73.5501C162.396 74.1512 162.373 75.5384 162.356 76.4985C162.352 76.7619 162.348 76.9931 162.348 77.1672V87.3802C162.348 87.7208 162.646 88.0185 163.029 88.0611H166.732C166.917 88.065 167.097 87.9959 167.232 87.8685C167.368 87.7412 167.448 87.5659 167.455 87.3802V75.2098C167.455 74.8997 167.461 74.5839 167.466 74.2657C167.499 72.4445 167.533 70.5437 166.519 69.1672C165.455 67.6777 163.753 67.0394 162.178 67.0394C159.965 67.0394 157.88 68.1883 156.986 70.6139C155.965 68.1883 154.476 67.0394 152.135 67.0394C149.837 67.0394 148.092 68.1883 147.199 70.6139H147.114V68.1031C147.1 67.9311 147.023 67.7704 146.897 67.6523C146.771 67.5343 146.605 67.4675 146.433 67.4648H142.943C142.758 67.461 142.578 67.5301 142.443 67.6575C142.307 67.7848 142.227 67.9601 142.22 68.1457V87.3801C142.248 87.5465 142.329 87.6991 142.452 87.8145C142.576 87.9298 142.733 88.0015 142.901 88.0184Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M224.605 77.8907C224.605 71.8054 221.583 67.0394 216.009 67.0394C210.562 67.0394 207.54 71.7202 207.583 77.7204C207.583 83.678 210.562 88.444 216.009 88.444C221.286 88.444 224.605 83.7632 224.605 77.8907ZM213.073 77.1247C213.073 74.7842 213.243 70.9969 216.009 70.9969C217.2 70.9969 218.051 71.5074 218.477 72.8692C218.945 74.4012 219.03 76.3586 219.03 77.9757C219.03 80.4439 218.86 84.4865 215.966 84.4865C213.071 84.4865 213.072 79.6036 213.073 77.2237L213.073 77.1247Z" fill="#C4C4C4"/>
+<path d="M228.052 88.0184H231.796C231.985 88.0167 232.166 87.9472 232.307 87.822C232.448 87.6968 232.538 87.5248 232.562 87.3379V76.9542C232.562 75.635 232.647 74.4856 233.158 73.2945C233.583 72.3581 234.435 71.7626 235.328 71.7626C237.715 71.7626 237.691 74.3541 237.672 76.4255C237.67 76.6065 237.668 76.7835 237.668 76.9544V87.4225C237.711 87.7202 238.009 87.9754 238.349 88.018H242.094C242.267 88.0257 242.437 87.9691 242.57 87.8591C242.704 87.7491 242.792 87.5936 242.818 87.4225V75.2946C242.818 73.4222 242.818 70.8264 241.839 69.2944C240.775 67.6346 239.116 67.039 237.456 67.039C234.86 67.039 233.413 68.273 232.35 70.9114H232.264V67.9752C232.227 67.8215 232.14 67.6843 232.017 67.5845C231.894 67.4846 231.742 67.4276 231.584 67.422H228.094C227.917 67.4233 227.746 67.4887 227.613 67.6059C227.48 67.7232 227.394 67.8846 227.371 68.0603V87.3375C227.371 87.678 227.669 87.9758 228.052 88.0184Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M185.15 88.1622C185.31 88.147 185.462 88.0818 185.583 87.9759L185.584 87.9758C185.856 87.7492 186.203 87.4529 186.574 87.1364C187.247 86.5613 187.999 85.9194 188.52 85.5077C188.818 85.295 188.776 84.8694 188.52 84.529C188.438 84.4111 188.356 84.2963 188.274 84.1824C187.676 83.3515 187.116 82.5741 187.116 81.0396V75.2097C187.116 75.0148 187.117 74.8211 187.118 74.6285C187.131 72.3829 187.142 70.3092 185.457 68.7414C184.01 67.3372 181.627 66.8691 179.797 66.8691C176.222 66.8691 172.265 68.1883 171.414 72.614C171.329 73.0822 171.669 73.2949 171.967 73.3799L175.584 73.7629C175.925 73.7629 176.137 73.4224 176.222 73.082C176.52 71.55 177.797 70.8266 179.244 70.8266C180.009 70.8266 180.86 71.1244 181.328 71.8053C181.817 72.4825 181.808 73.3928 181.799 74.212C181.798 74.3194 181.796 74.4252 181.796 74.5288V74.9968C181.444 75.0383 181.073 75.0776 180.69 75.1181C178.721 75.3267 176.443 75.5679 174.733 76.316C172.391 77.3374 170.732 79.38 170.732 82.4438C170.732 86.3162 173.2 88.2737 176.349 88.2737C178.987 88.2737 180.477 87.6348 182.519 85.5503C182.619 85.6932 182.709 85.8261 182.795 85.9521C183.296 86.6891 183.636 87.1889 184.689 88.061C184.829 88.1421 184.99 88.1775 185.15 88.1622ZM181.796 79.0554C181.796 78.9798 181.796 78.9036 181.796 78.8269V78.019C179.072 78.019 176.221 78.6148 176.221 81.8063C176.221 83.4234 177.072 84.5298 178.519 84.5298C179.583 84.5298 180.519 83.8915 181.115 82.8276C181.8 81.5778 181.798 80.4049 181.796 79.0554Z" fill="#C4C4C4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M135.957 88.1622C136.117 88.147 136.269 88.0818 136.39 87.9759L136.392 87.9758C136.663 87.7492 137.01 87.4529 137.381 87.1364C138.055 86.5613 138.806 85.9194 139.328 85.5077C139.626 85.295 139.583 84.8694 139.328 84.529C139.246 84.4111 139.163 84.2963 139.081 84.1825C138.483 83.3515 137.923 82.5741 137.923 81.0396V75.2097C137.923 75.0148 137.925 74.8211 137.926 74.6285C137.938 72.3829 137.949 70.3092 136.264 68.7414C134.817 67.3372 132.434 66.8691 130.604 66.8691C127.03 66.8691 123.072 68.1883 122.221 72.614C122.136 73.0822 122.477 73.2949 122.774 73.3799L126.391 73.7629C126.732 73.7629 126.945 73.4224 127.03 73.082C127.328 71.55 128.604 70.8266 130.051 70.8266C130.816 70.8266 131.668 71.1244 132.136 71.8053C132.625 72.4825 132.615 73.3928 132.606 74.2121C132.605 74.3194 132.604 74.4252 132.604 74.5288V74.9968C132.251 75.0383 131.88 75.0776 131.498 75.1181C129.528 75.3267 127.25 75.5679 125.54 76.316C123.199 77.3374 121.539 79.38 121.539 82.4438C121.539 86.3162 124.007 88.2737 127.156 88.2737C129.795 88.2737 131.284 87.6348 133.327 85.5503C133.426 85.6932 133.516 85.8261 133.602 85.9521C134.103 86.6891 134.443 87.1889 135.497 88.061C135.636 88.1421 135.797 88.1775 135.957 88.1622ZM132.646 79.0554C132.646 78.9798 132.645 78.9036 132.645 78.8269V78.019C129.922 78.019 127.071 78.6148 127.071 81.8063C127.071 83.4234 127.922 84.5298 129.369 84.5298C130.433 84.5298 131.369 83.8915 131.964 82.8276C132.65 81.5778 132.648 80.4049 132.646 79.0554Z" fill="#C4C4C4"/>
+<path d="M199.71 92.0611C198.817 90.9121 193.752 91.5078 191.497 91.8058C190.816 91.8908 190.689 91.2951 191.327 90.8695C195.37 88.0184 201.965 88.8694 202.731 89.8057C203.497 90.7419 202.519 97.3798 198.731 100.529C198.135 100.997 197.582 100.742 197.837 100.104L197.882 99.9924C198.753 97.8156 200.588 93.2319 199.71 92.0611Z" fill="#C4C4C4"/>
+<path d="M196.774 95.4231C189.753 100.615 179.54 103.381 170.731 103.381C158.39 103.381 147.326 98.8275 138.9 91.2529C138.262 90.6574 138.815 89.8487 139.624 90.3167C148.688 95.5934 159.88 98.7424 171.454 98.7424C179.242 98.7424 187.837 97.1254 195.753 93.7635C196.944 93.2955 197.923 94.5721 196.774 95.4231Z" fill="#C4C4C4"/>
+</g>
+</svg>
           </div>
           <div class="partner-item">
             <img src="./logos/Commerce.png" alt="Commerce" />
@@ -801,30 +897,36 @@
         <!--End .blog-content-->
         <div class="blog-list">
           <div class="blog-item">
-            <img src="./images/red_house.png" alt="Red House" />
-            <h4 class="blog-item-title">
+               <img src="./images/red_house.png" alt="Red House" />
+            <a href="https://www.seaboardproperties.ae/agency-is-the-capacity-of-an-actor-to-act/" target="_blank">
+              <h4 class="blog-item-title">
               Agency is the capacity of an actor to act in a given
             </h4>
+          </a>
             <p class="blog-meta">DIECENER O6, 2021ADMN</p>
             <p class="blog-text">
               But I must explain to ycu haw all this mistaken idea of denouncing
               pleasure and praising pain was barm and I will gve yau acomplete
               account of the system and expaund.
             </p>
-            <p class="blog-readmore">READ MORE</p>
+            <a href="https://www.seaboardproperties.ae/agency-is-the-capacity-of-an-actor-to-act/" target="_blank">
+              <p class="blog-readmore">READ MORE</p>
+            </a>
           </div>
-          <div class="blog-item">
-            <img src="./images/row_houses.png" alt="Row House" />
-            <h4 class="blog-item-title">
-              Renovating a living roo? Expeats shere their secrets
-            </h4>
+          <div class="blog-item">            
+              <img src="./images/row_houses.png" alt="Row House" />
+            <a href="https://miproperty.com.au/renovating-a-living-room-experts-share-their-secrets/" target="_blank">
+              <h4 class="blog-item-title">  Renovating a living roo? Expeats shere their secrets</h4>
+            </a>
             <p class="blog-meta">DIECENER O6, 2021ADMN</p>
             <p class="blog-text">
               But I must explain to ycu haw all this mistaken idea of denouncing
               pleasure and praising pain was barm and I will gve yau acomplete
               account of the system and expaund.
             </p>
-            <p class="blog-readmore">READ MORE</p>
+            <a href="https://miproperty.com.au/renovating-a-living-room-experts-share-their-secrets/" target="_blank">
+               <p class="blog-readmore">READ MORE</p>
+            </a>
           </div>
         </div>
         <!--End .blog-list-->
@@ -972,9 +1074,9 @@
           <div class="footer-item">
             <span class="footer-title">Justice</span>
             <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Cookie Preferences</a></li>
+              <li><a href="https://termly.io/products/privacy-policy-generator" target="_blank">Privacy Policy</a></li>
+              <li><a href="https://termly.io/products/terms-and-conditions-generator" target="_blank">Terms & Conditions</a></li>
+              <li><a href="https://termly.io/legal-dictionary/cookie-preferences" target="_blank">Cookie Preferences</a></li>
             </ul>
           </div>
           <div class="footer-item">
@@ -983,19 +1085,30 @@
               <li><a href="./index.html">Home</a></li>
               <li><a href="./about.html">About</a></li>
               <li><a href="./practice.html">Practice Areas</a></li>
-              <li><a href="./blog.html">Attorneys</a></li>
+              <li><a href="" >Attorneys</a></li>
             </ul>
           </div>
           <div class="footer-item">
             <span class="footer-title">Justice</span>
-            <p>50 Harrison Street, PH Suite 445</p>
-            <p>Hoboken, NJ 07030</p>
-            <p>(000) 123-4567</p>
-            <p>yourlawfirm22@gmail.com</p>
+            <ul>
+            <li><a href="https://www.google.com/maps?q=50+Harrison+Street,+PH+Suite+445,+Hoboken,+NJ+07030" target="_blank"">             
+            <span>50 Harrison Street, PH Suite 445</span>
+            <span>Hoboken, NJ 07030</span></a></li>
+            <li><a href="tel:(000)1234567">(000) 123-4567</a></li>
+            <li><a href="mailto:yourlawfirm22@gmail.com">yourlawfirm22@gmail.com</a></li>
+            </ul>
           </div>
           <div class="footer-item">
             <div class="footer-map">
-              <img src="./images/Map.png" alt="Map" />
+              <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8639078439857!2d105.84117831533325!3d21.028511885995044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDAxJzQyLjYiTiAxMDXCsDUwJzM0LjIiRQ!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+              width="100%" 
+              height="268" 
+              style="border:0; border-radius: 10px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
               <button class="footer-btn">View Large Map</button>
             </div>
           </div>
@@ -1018,18 +1131,24 @@
           <div class="footer-meta">
             <p class="copyright">Copyright © 2022 UI HUT All Rights Reserved</p>
             <div class="footer-social">
-              <a href="https://www.facebook.com/" target="_blank"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="https://publish.twitter.com/" target="_blank"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="https://www.linkedin.com/" target="_blank"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <a href="https://www.instagram.com/" target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
+              <ul>
+                 <li>
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+              <li>
+                <a href="https://publish.twitter.com/" target="_blank"><i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i>
+            </a>
+            </li>
+              <li> 
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>
+            </a>
+            </li>
+              </ul>
             </div>
           </div>
           <!--End .footer-meta-->
