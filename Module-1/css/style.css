@@ -842,11 +842,11 @@ input[type="checkbox"] {
   .service-item:hover {
     box-shadow: var(--shadow-light);
   }
-  
+
   .service-item:hover .service-icon circle {
     fill: var(--primary-color);
   }
-  
+
   .service-item:hover .service-icon path {
     fill: #ffefe5;
   }
@@ -857,11 +857,11 @@ input[type="checkbox"] {
   .service-item:active {
     box-shadow: var(--shadow-light);
   }
-  
+
   .service-item:active .service-icon circle {
     fill: var(--primary-color);
   }
-  
+
   .service-item:active .service-icon path {
     fill: #ffefe5;
   }

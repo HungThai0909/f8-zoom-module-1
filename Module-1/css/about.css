@@ -667,6 +667,30 @@ input[type="checkbox"] {
   color: var(--primary-color);
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .meet-item img:hover {
+    border-color: var(--primary-color);
+    width: 196px;
+    height: 196px;
+    margin-block: 52px 28px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .meet-item img:active {
+    border-color: var(--primary-color);
+  }
+  .meet-item img:focus {
+    outline: none;
+    border-color: var(--white); 
+  }
+  
+  /* Loại bỏ hiệu ứng hover còn sót trên mobile */
+  .meet-item img:hover {
+    border-color: var(--white); /* reset về màu ban đầu */
+  }
+}
+
 /* Footer */
 .footer-container {
   background-color: var(--dark-bg);
@@ -1024,6 +1048,9 @@ input[type="checkbox"] {
   .doing-btn:active,
   .footer-btn:active {
     background-color: var(--primary-hover);
+  }
+  .meet-item img:active {
+    border-color: var(--primary-color);
   }
 }
 
