@@ -855,6 +855,13 @@ input[type="checkbox"] {
   .service-item:hover .service-icon path {
     fill: #ffefe5;
   }
+  .faq-question:hover .faq-icon {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  .faq-question:hover .faq-icon::before {
+    background-color: var(--white);
+  }
 }
 
 /* Active cho mobile - CHỈ HOẠT ĐỘNG KHI ĐANG NHẤN */
@@ -869,6 +876,13 @@ input[type="checkbox"] {
 
   .service-item:active .service-icon path {
     fill: #ffefe5;
+  }
+  .faq-question:active .faq-icon {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  .faq-question:active .faq-icon::before {
+    background-color: var(--white);
   }
 }
 
@@ -1332,6 +1346,7 @@ input[type="checkbox"] {
   cursor: pointer;
   gap: 20px;
   padding: 20px 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .faq-question-text {
@@ -1379,12 +1394,6 @@ input[type="checkbox"] {
   opacity: 0;
 }
 
-.faq-question:hover .faq-icon {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
-.faq-question:hover .faq-icon::before,
 .faq-item input[type="checkbox"]:checked ~ .faq-question .faq-icon::before,
 .faq-item input[type="checkbox"]:checked ~ .faq-question .faq-icon::after {
   background-color: var(--white);
